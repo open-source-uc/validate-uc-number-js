@@ -4,6 +4,7 @@
   "description": "Valida un número de alumno de la UC. Compatible con cliente y servidor. ",
   "main": "index.js",
   "scripts": {
+    "build": "browserify index.js -o dist/uc-numero-alumno.js",
     "test": "mocha"
   },
   "repository": {
@@ -16,12 +17,16 @@
     "uc"
   ],
   "author": "Patricio López <patricio@lopezjuri.com> (https://lopezjuri.com)",
+  "contributors": [
+    "Pedro Pablo Aste (http://www.wachunei.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mrpatiwi/uc-numero-alumno/issues"
   },
   "homepage": "https://github.com/mrpatiwi/uc-numero-alumno#readme",
   "devDependencies": {
+    "browserify": "^12.0.1",
     "chai": "^3.4.1",
     "mocha": "^2.3.4"
   }
