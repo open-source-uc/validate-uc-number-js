@@ -6,6 +6,11 @@
  * @return {boolean}               Return true if the input is valid, false otherwise.
  */
 module.exports = function validate(studentNumber) {
+  if (studentNumber === undefined) {
+    return false;
+  }
+
+  studentNumber = String(studentNumber)
   const givenDigit = studentNumber.split('').reverse().slice(0, 1).join('').toUpperCase(),
     chars = studentNumber.split('').reverse().splice(1);
 
