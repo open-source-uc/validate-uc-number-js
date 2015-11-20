@@ -2,7 +2,7 @@
 
 /**
  * Validate student number identifier.
- * @param  {string} studentNumber Student ID.
+ * @param  {(string|number)} studentNumber Student ID.
  * @return {boolean}               Return true if the input is valid, false otherwise.
  */
 module.exports = function validate(studentNumber) {
@@ -10,7 +10,7 @@ module.exports = function validate(studentNumber) {
     return false;
   }
 
-  studentNumber = String(studentNumber)
+  studentNumber = String(studentNumber);
   const givenDigit = studentNumber.split('').reverse().slice(0, 1).join('').toUpperCase(),
     chars = studentNumber.split('').reverse().splice(1);
 
