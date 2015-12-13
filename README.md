@@ -1,20 +1,73 @@
-# uc-numero-alumno
-[![Build Status][ci-image]][ci-url] [![lint][lint-image]][lint-url]
+# Validador de número de alumno UC
+
+[![Build Status][ci-image]][ci-url]  [![lint][lint-image]][lint-url]
 
 Valida un número de alumno de la UC. Compatible con cliente y servidor.
 
-## Instalar
+## Servidor
+
+### Instalar para Node.js
 
 ```sh
-$ npm install uc-numero-alumno --save
+npm install uc-numero-alumno --save
 ```
 
-## Uso
+### Uso en el servidor
 
 ```js
-import validador from 'uc-numero-alumno';
+const validate = require('uc-numero-alumno');
 
-let valido = validador('1263476J');
+// With strings
+if (validate('1263476J')) {
+  // ...
+}
+
+// With numbers
+if (validate(13546212)) {
+  // ...
+}
+```
+
+## Cliente (Browser)
+
+### Instalar para navegadores
+
+Puedes usarlo con `npm` o con `bower`.
+
+#### Bower
+
+Añade Bower como una dependencia:
+
+```sh
+npm install --save-dev bower
+```
+
+Instalar esta librería:
+
+```sh
+bower install --save uc-numero-alumno
+```
+
+Para importarlo en un `.html`:
+
+```html
+<!-- Compressed version-->
+<script src="bower_components/uc-numero-alumno/dist/uc-numero-alumno.min.js"></script>
+
+<!-- Normal version-->
+<script src="bower_components/uc-numero-alumno/dist/uc-numero-alumno.js"></script>
+```
+
+### Uso en el client
+
+```js
+// Example with jQuery
+$('#text-input').on('input', function() {
+  var identifier = $(this).val();
+  if (validate(identifier)) {
+    // ...
+  }
+});
 ```
 
 [ci-image]: https://travis-ci.org/mrpatiwi/uc-numero-alumno.svg
