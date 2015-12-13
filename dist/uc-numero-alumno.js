@@ -1,4 +1,4 @@
-var validate =
+var validUCnumber =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -43,6 +43,9 @@ var validate =
 /************************************************************************/
 /******/ ([
 /* 0 */
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
 /***/ function(module, exports) {
 
 	/**

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>UC Número Alumno</title>
   <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="../dist/uc-numero-alumno.built.js"></script>
+  <script type="text/javascript" src="../dist/uc-numero-alumno.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       function validateInput(identifier) {
-        $('#valid').text(validate(identifier));
+        $('#valid').text(validUCnumber(identifier));
       }
 
       $('#text-input').on('input', function() {

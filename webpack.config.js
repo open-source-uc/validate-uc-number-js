@@ -6,7 +6,7 @@ module.exports = {
   },
   output: {
     libraryTarget: 'var',
-    library: 'validate', // to access it on AMD
+    library: 'validUCnumber', // to access it on AMD
     path: './dist',
     filename: '[name].js',
   },

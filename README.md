@@ -58,13 +58,15 @@ Para importarlo en un `.html`:
 <script src="bower_components/uc-numero-alumno/dist/uc-numero-alumno.js"></script>
 ```
 
+Ahora disponemos de la función: `validUCnumber()` que recibe un *string* o un número.
+
 ### Uso en el client
 
 ```js
 // Example with jQuery
 $('#text-input').on('input', function() {
   var identifier = $(this).val();
-  if (validate(identifier)) {
+  if (validUCnumber(identifier)) {
     // ...
   }
 });

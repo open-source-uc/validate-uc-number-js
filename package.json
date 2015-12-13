@@ -4,7 +4,7 @@
   "description": "Valida un número de alumno de la UC. Compatible con cliente y servidor. ",
   "main": "index.js",
   "scripts": {
-    "build-normal": "webpack",
+    "build-normal": "webpack -d",
     "build-min": "webpack -p -d --config webpack.config.min.js",
     "build": "npm run build-normal && npm run build-min",
     "test": "mocha"
