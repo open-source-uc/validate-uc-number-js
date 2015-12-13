@@ -4,7 +4,9 @@
   "description": "Valida un número de alumno de la UC. Compatible con cliente y servidor. ",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js -o dist/uc-numero-alumno.js",
+    "build-normal": "webpack",
+    "build-min": "webpack -p -d --config webpack.config.min.js",
+    "build": "npm run build-normal && npm run build-min",
     "test": "mocha"
   },
   "repository": {
@@ -26,8 +28,8 @@
   },
   "homepage": "https://github.com/mrpatiwi/uc-numero-alumno#readme",
   "devDependencies": {
-    "browserify": "^12.0.1",
     "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "webpack": "^1.12.9"
   }
 }
