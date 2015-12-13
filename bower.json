@@ -1,0 +1,33 @@
+{
+  "name": "uc-numero-alumno",
+  "description": "Valida un número de alumno de la UC. Compatible con cliente y servidor.",
+  "main": [
+    "dist/uc-numero-alumno.js",
+    "dist/uc-numero-alumno.js.map",
+    "dist/uc-numero-alumno.min.js",
+    "dist/uc-numero-alumno.min.js.map"
+  ],
+  "authors": [
+    "Patricio López <patricio@lopezjuri.com> (https://lopezjuri.com)",
+    "Pedro Pablo Aste (http://www.wachunei.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chile",
+    "puc",
+    "uc"
+  ],
+  "homepage": "https://github.com/mrpatiwi/uc-numero-alumno",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "example",
+    "test",
+    "tests"
+  ]
+}
