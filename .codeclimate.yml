@@ -10,3 +10,6 @@ ratings:
 
 exclude_paths:
   - test/**/*
+  - dist/**/*
+  - example/**/*
+  - .codeclimate.yml
