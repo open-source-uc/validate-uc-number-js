@@ -32,7 +32,19 @@ if (validate(13546212)) {
 
 ### Instalar para navegadores
 
-Puedes usarlo con `npm` o con `bower`.
+Puedes usarlo con `npm`, `bower` o usando a Github como CDN.
+
+#### Github como CDN
+
+Usando a [rawgit.com](https://rawgit.com/):
+
+```html
+<!-- Compressed version-->
+<script src="//cdn.rawgit.com/mrpatiwi/uc-numero-alumno/master/dist/uc-numero-alumno.min.js"></script>
+
+<!-- Normal version-->
+<script src="//cdn.rawgit.com/mrpatiwi/uc-numero-alumno/master/dist/uc-numero-alumno.js"></script>
+```
 
 #### Bower
 
