@@ -9,6 +9,9 @@
     "build": "npm run build-normal && npm run build-min",
     "test": "mocha"
   },
+  "bin": {
+    "validate-uc-number": "bin/validate"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrpatiwi/uc-numero-alumno.git"
