@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+const validator = require('../index.js');
+
+console.log(validator(process.argv[2]));
