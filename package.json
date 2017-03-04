@@ -1,12 +1,9 @@
 {
-  "name": "uc-numero-alumno",
-  "version": "0.3.2",
-  "description": "Valida un número de alumno de la UC. Compatible con cliente y servidor. ",
+  "name": "@open-source-uc/validate-uc-number",
+  "version": "0.0.0",
+  "description": "Universal Javascript module to validate UC alumni identifier numbers.",
   "main": "index.js",
   "scripts": {
-    "build-normal": "webpack -d",
-    "build-min": "webpack -p -d --config webpack.config.min.js",
-    "build": "npm run build-normal && npm run build-min",
     "test": "mocha"
   },
   "bin": {
@@ -14,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrpatiwi/uc-numero-alumno.git"
+    "url": "git+https://github.com/open-source-uc/validate-uc-number-js"
   },
   "keywords": [
     "chile",
@@ -27,12 +24,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrpatiwi/uc-numero-alumno/issues"
+    "url": "https://github.com/open-source-uc/validate-uc-number-js/issues"
   },
-  "homepage": "https://github.com/mrpatiwi/uc-numero-alumno#readme",
+  "homepage": "https://github.com/open-source-uc/validate-uc-number-js#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0",
-    "webpack": "^1.13.3"
+    "mocha": "^3.2.0"
   }
 }

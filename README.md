@@ -1,21 +1,29 @@
-# Validador de número de alumno UC
+# UC number validator
 
 [![Build Status][ci-image]][ci-url]  [![lint][lint-image]][lint-url]
 
-Valida un número de alumno de la UC. Compatible con cliente y servidor.
+Universal Javascript module to validate UC alumni identifier numbers.
 
-## Servidor
+Compatible with Node.js, React-Native and browser environments.
 
-### Instalar para Node.js
+## Getting started
+
+Install this module with:
 
 ```sh
-npm install uc-numero-alumno --save
+# with yarn:
+yarn add @open-source-uc/validate-uc-number
+
+# with npm:
+npm install --save @open-source-uc/validate-uc-number
 ```
 
-### Uso en el servidor
+Node.js and browser (with webpack) usage:
 
 ```js
-const validate = require('uc-numero-alumno');
+'use strict';
+
+const validate = require('@open-source-uc/validate-uc-number');
 
 // With strings
 if (validate('1263476J')) {
@@ -28,63 +36,7 @@ if (validate(13546212)) {
 }
 ```
 
-## Cliente (Browser)
-
-### Instalar para navegadores
-
-Puedes usarlo con `npm`, `bower` o usando a Github como CDN.
-
-#### Github como CDN
-
-Usando a [rawgit.com](https://rawgit.com/):
-
-```html
-<!-- Compressed version-->
-<script src="//cdn.rawgit.com/mrpatiwi/uc-numero-alumno/master/dist/uc-numero-alumno.min.js"></script>
-
-<!-- Normal version-->
-<script src="//cdn.rawgit.com/mrpatiwi/uc-numero-alumno/master/dist/uc-numero-alumno.js"></script>
-```
-
-#### Bower
-
-Añade Bower como una dependencia:
-
-```sh
-npm install --save-dev bower
-```
-
-Instalar esta librería:
-
-```sh
-bower install --save uc-numero-alumno
-```
-
-Para importarlo en un `.html`:
-
-```html
-<!-- Compressed version-->
-<script src="bower_components/uc-numero-alumno/dist/uc-numero-alumno.min.js"></script>
-
-<!-- Normal version-->
-<script src="bower_components/uc-numero-alumno/dist/uc-numero-alumno.js"></script>
-```
-
-Ahora disponemos de la función: `validUCnumber()` que recibe un *string* o un número.
-
-### Uso en el client
-
-```js
-// Example with jQuery
-$('#text-input').on('input', function() {
-  var identifier = $(this).val();
-  if (validUCnumber(identifier)) {
-    // ...
-  }
-});
-```
-
-[ci-image]: https://travis-ci.org/mrpatiwi/uc-numero-alumno.svg
-[ci-url]: https://travis-ci.org/mrpatiwi/uc-numero-alumno
-[lint-image]: https://codeclimate.com/github/mrpatiwi/uc-numero-alumno/badges/gpa.svg
-[lint-url]: https://codeclimate.com/github/mrpatiwi/uc-numero-alumno
+[ci-image]: https://travis-ci.org/open-source-uc/validate-uc-number.svg
+[ci-url]: https://travis-ci.org/open-source-uc/validate-uc-number
+[lint-image]: https://codeclimate.com/github/open-source-uc/validate-uc-number/badges/gpa.svg
+[lint-url]: https://codeclimate.com/github/open-source-uc/validate-uc-number

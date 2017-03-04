@@ -9,11 +9,11 @@ function validate(studentNumber) {
   }
 
   studentNumber = String(studentNumber);
-  var givenDigit = studentNumber.split('').reverse().slice(0, 1).join('').toUpperCase(),
-    chars = studentNumber.split('').reverse().splice(1);
+  var givenDigit = studentNumber.split('').reverse().slice(0, 1).join('').toUpperCase();
+  var chars = studentNumber.split('').reverse().splice(1);
 
-  var counter = 2,
-    sum = 0;
+  var counter = 2;
+  var sum = 0;
   for (var i = 0; i < chars.length; i++) {
     sum += Number(chars[i]) * counter++;
     counter = counter > 8 ? 2 : counter;

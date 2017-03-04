@@ -10,6 +10,5 @@ ratings:
 
 exclude_paths:
   - test/**/*
-  - dist/**/*
-  - example/**/*
+  - bin/**/*
   - .codeclimate.yml
