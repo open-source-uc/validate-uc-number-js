@@ -1,6 +1,6 @@
 # UC number validator
 
-[![Build Status][ci-image]][ci-url]  [![lint][lint-image]][lint-url]
+[![Build Status][ci-image]][ci-url] [![lint][lint-image]][lint-url]
 
 Universal Javascript module to validate UC alumni identifier numbers.
 
@@ -36,7 +36,7 @@ if (validate(13546212)) {
 }
 ```
 
-[ci-image]: https://travis-ci.org/open-source-uc/validate-uc-number.svg
-[ci-url]: https://travis-ci.org/open-source-uc/validate-uc-number
-[lint-image]: https://codeclimate.com/github/open-source-uc/validate-uc-number/badges/gpa.svg
-[lint-url]: https://codeclimate.com/github/open-source-uc/validate-uc-number
+[ci-image]: https://travis-ci.org/open-source-uc/validate-uc-number-js.svg
+[ci-url]: https://travis-ci.org/open-source-uc/validate-uc-number-js
+[lint-image]: https://codeclimate.com/github/open-source-uc/validate-uc-number-js/badges/gpa.svg
+[lint-url]: https://codeclimate.com/github/open-source-uc/validate-uc-number-js

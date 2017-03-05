@@ -19,7 +19,7 @@ function validate(studentNumber) {
     counter = counter > 8 ? 2 : counter;
   }
 
-  var verificationDigit = (11 - sum % 11 != 10) ? String(11 - sum % 11) : 'J';
+  var verificationDigit = (11 - sum % 11 !== 10) ? String(11 - sum % 11) : 'J';
   return verificationDigit === givenDigit;
 }
 
