@@ -1,6 +1,6 @@
 {
   "name": "@open-source-uc/validate-uc-number",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Universal Javascript module to validate UC alumni identifier numbers.",
   "main": "index.js",
   "scripts": {
