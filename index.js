@@ -20,6 +20,7 @@ function validate(studentNumber) {
   }
 
   var verificationDigit = (11 - sum % 11 !== 10) ? String(11 - sum % 11) : 'J';
+  var verificationDigit = verificationDigit === '11' ? '0' : verificationDigit;
   return verificationDigit === givenDigit;
 }
 

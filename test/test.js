@@ -18,6 +18,10 @@ describe('uc-numero-alumno', () => {
     validador('1263476J').should.be.true;
   });
 
+  it('should validate valid number with digit "11"', () => {
+    validador('18640850').should.be.true;
+  });
+
   it('should fail on invalid number', () => {
     validador('12635662').should.be.false;
   });
